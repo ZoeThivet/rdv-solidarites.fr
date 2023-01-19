@@ -66,9 +66,6 @@ GEM
     activerecord (7.0.4.1)
       activemodel (= 7.0.4.1)
       activesupport (= 7.0.4.1)
-    activerecord-postgres_enum (2.0.1)
-      activerecord (>= 5.2)
-      pg
     activestorage (7.0.4.1)
       actionpack (= 7.0.4.1)
       activejob (= 7.0.4.1)
@@ -617,7 +614,6 @@ PLATFORMS
 
 DEPENDENCIES
   active_link_to
-  activerecord-postgres_enum
   administrate
   auto_strip_attributes
   axe-core-api (= 4.3.2)
