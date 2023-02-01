@@ -130,7 +130,7 @@ class SearchContext
       Lieu
         .with_open_slots_for_motifs(matching_motifs)
         .includes(:organisation)
-        .limit(20) # TODO: paginate, maybe use PostGIS to sort by distance in DB
+        .limit(1) # TODO: paginate, maybe use PostGIS to sort by distance in DB
         .sort_by { |lieu| lieu.distance(@latitude.to_f, @longitude.to_f) }
   end
 
